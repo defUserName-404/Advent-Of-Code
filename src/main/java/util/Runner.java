@@ -1,9 +1,9 @@
 package util;
 
-import solution.year_2021.Day1_SonarSweep;
+import solution.year_2021.Day2_Dive;
 
 public class Runner {
 	public static void main(String[] args) {
-		Day1_SonarSweep.part1();
+		Day2_Dive.part1();
 	}
 }
