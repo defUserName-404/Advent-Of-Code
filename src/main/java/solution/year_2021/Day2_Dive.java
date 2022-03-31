@@ -16,11 +16,11 @@ public class Day2_Dive {
 
 			switch (command) {
 				case "forward" -> x += value;
-				case "up" -> y += value;
-				case "down" -> y -= value;
+				case "up" -> y -= value;
+				case "down" -> y += value;
 			}
 		}
-		int multiplicationResult = x * -y;
+		int multiplicationResult = x * y;
 		IO.getInstance().writeToFile(String.valueOf(multiplicationResult));
 		return multiplicationResult;
 	}
