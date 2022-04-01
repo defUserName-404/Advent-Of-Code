@@ -5,19 +5,45 @@ import util.IO;
 import java.util.ArrayList;
 
 public class Day1_NotQuiteLisp {
+	private static final ArrayList<String> input = IO.getInstance().readFile();
+	private static int count = 0;
+
+	private static void followInstructions(char currentChar) {
+		if (currentChar == '(')
+			count++;
+		else if (currentChar == ')')
+			count--;
+	}
+
 	public static int part1() {
-		int count = 0;
-		ArrayList<String> input = IO.getInstance().readFile();
+		count = 0;
+
+		for (final String current : input)
+			for (final char currentChar : current.toCharArray())
+				followInstructions(currentChar);
+
+		IO.getInstance().writeToFile(String.valueOf(count));
+
+		return count;
+	}
+
+	public static int part2() {
+		count = 0;
+		int ans = 0;
 
 		for (final String current : input) {
-			for (final char currentChar : current.toCharArray()) {
-				if (currentChar == '(')
-					count++;
-				else if (currentChar == ')')
-					count--;
+			for (int i = 0; i < current.length(); i++) {
+				followInstructions(current.charAt(i));
+
+				if (count == -1) {
+					ans = i + 1;
+					break;
+				}
 			}
 		}
-		IO.getInstance().writeToFile(String.valueOf(count));
-		return count;
+
+		IO.getInstance().writeToFile(String.valueOf(ans));
+
+		return ans;
 	}
 }
