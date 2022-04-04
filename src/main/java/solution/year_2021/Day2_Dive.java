@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Day2_Dive {
 	public static int part1() {
-		ArrayList<String> input = IO.getInstance().readFile();
+		ArrayList<String> input = IO.getInstance().readInputFile();
 		int x = 0, y = 0;
 
 		for (final String currentCommand : input) {
@@ -21,7 +21,7 @@ public class Day2_Dive {
 			}
 		}
 		int multiplicationResult = x * y;
-		IO.getInstance().writeToFile(String.valueOf(multiplicationResult));
+		IO.getInstance().writeToOutputFile(String.valueOf(multiplicationResult));
 		return multiplicationResult;
 	}
 }

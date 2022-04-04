@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Day1_SonarSweep {
 	public static int part1() {
-		ArrayList<String> input = IO.getInstance().readFile();
+		ArrayList<String> input = IO.getInstance().readInputFile();
 		int increaseCount = 0;
 		int prev = Integer.parseInt(input.get(0));
 
@@ -16,7 +16,7 @@ public class Day1_SonarSweep {
 				increaseCount++;
 			prev = currentNum;
 		}
-		IO.getInstance().writeToFile(String.valueOf(increaseCount));
+		IO.getInstance().writeToOutputFile(String.valueOf(increaseCount));
 		return increaseCount;
 	}
 }

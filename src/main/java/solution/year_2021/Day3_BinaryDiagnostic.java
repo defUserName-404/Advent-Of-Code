@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class Day3_BinaryDiagnostic {
 	public static int part1() {
-		ArrayList<String> input = IO.getInstance().readFile();
+		ArrayList<String> input = IO.getInstance().readInputFile();
 		HashMap<Integer, Integer> occurrenceOfZeroInColumn = new HashMap<>();
 		StringBuilder gamma = new StringBuilder(), epsilon = new StringBuilder();
 		int n = input.get(0).length();
@@ -39,7 +39,7 @@ public class Day3_BinaryDiagnostic {
 		int gammaInDecimal = Integer.parseInt(gamma.toString(), 2);
 		int epsilonInDecimal = Integer.parseInt(epsilon.toString(), 2);
 		int ans = gammaInDecimal * epsilonInDecimal;
-		IO.getInstance().writeToFile(String.valueOf(ans));
+		IO.getInstance().writeToOutputFile(String.valueOf(ans));
 
 		return ans;
 	}

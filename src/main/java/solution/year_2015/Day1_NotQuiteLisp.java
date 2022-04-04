@@ -5,7 +5,7 @@ import util.IO;
 import java.util.ArrayList;
 
 public class Day1_NotQuiteLisp {
-	private static final ArrayList<String> input = IO.getInstance().readFile();
+	private static final ArrayList<String> input = IO.getInstance().readInputFile();
 	private static int count = 0;
 
 	private static void followInstructions(char currentChar) {
@@ -22,7 +22,7 @@ public class Day1_NotQuiteLisp {
 			for (final char currentChar : current.toCharArray())
 				followInstructions(currentChar);
 
-		IO.getInstance().writeToFile(String.valueOf(count));
+		IO.getInstance().writeToOutputFile(String.valueOf(count));
 
 		return count;
 	}
@@ -42,7 +42,7 @@ public class Day1_NotQuiteLisp {
 			}
 		}
 
-		IO.getInstance().writeToFile(String.valueOf(ans));
+		IO.getInstance().writeToOutputFile(String.valueOf(ans));
 
 		return ans;
 	}

@@ -17,7 +17,7 @@ public class IO {
 		return instance;
 	}
 
-	public ArrayList<String> readFile() {
+	public ArrayList<String> readInputFile() {
 		ArrayList<String> inputData = new ArrayList<>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(INPUT_FILE));
@@ -31,7 +31,7 @@ public class IO {
 		return inputData;
 	}
 
-	public void writeToFile(String string) {
+	public void writeToOutputFile(String string) {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(OUTPUT_FILE));
 			writer.write(string);
