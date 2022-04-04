@@ -1,12 +1,9 @@
 package solution.year_2021;
 
-import util.IO;
+import solution.Solution;
 
-import java.util.ArrayList;
-
-public class Day2_Dive {
+public class Day2_Dive extends Solution {
 	public static int part1() {
-		ArrayList<String> input = IO.getInstance().readInputFile();
 		int x = 0, y = 0;
 
 		for (final String currentCommand : input) {
@@ -20,8 +17,10 @@ public class Day2_Dive {
 				case "down" -> y += value;
 			}
 		}
+
 		int multiplicationResult = x * y;
-		IO.getInstance().writeToOutputFile(String.valueOf(multiplicationResult));
+		displayOutput(String.valueOf(multiplicationResult));
+
 		return multiplicationResult;
 	}
 }

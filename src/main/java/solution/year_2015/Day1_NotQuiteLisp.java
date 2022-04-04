@@ -1,11 +1,8 @@
 package solution.year_2015;
 
-import util.IO;
+import solution.Solution;
 
-import java.util.ArrayList;
-
-public class Day1_NotQuiteLisp {
-	private static final ArrayList<String> input = IO.getInstance().readInputFile();
+public final class Day1_NotQuiteLisp extends Solution {
 	private static int count = 0;
 
 	private static void followInstructions(char currentChar) {
@@ -22,7 +19,7 @@ public class Day1_NotQuiteLisp {
 			for (final char currentChar : current.toCharArray())
 				followInstructions(currentChar);
 
-		IO.getInstance().writeToOutputFile(String.valueOf(count));
+		displayOutput(String.valueOf(count));
 
 		return count;
 	}
@@ -42,7 +39,7 @@ public class Day1_NotQuiteLisp {
 			}
 		}
 
-		IO.getInstance().writeToOutputFile(String.valueOf(ans));
+		displayOutput(String.valueOf(ans));
 
 		return ans;
 	}

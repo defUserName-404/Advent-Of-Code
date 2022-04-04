@@ -1,12 +1,9 @@
 package solution.year_2021;
 
-import util.IO;
+import solution.Solution;
 
-import java.util.ArrayList;
-
-public class Day1_SonarSweep {
+public class Day1_SonarSweep extends Solution {
 	public static int part1() {
-		ArrayList<String> input = IO.getInstance().readInputFile();
 		int increaseCount = 0;
 		int prev = Integer.parseInt(input.get(0));
 
@@ -16,7 +13,9 @@ public class Day1_SonarSweep {
 				increaseCount++;
 			prev = currentNum;
 		}
-		IO.getInstance().writeToOutputFile(String.valueOf(increaseCount));
+
+		displayOutput(String.valueOf(increaseCount));
+
 		return increaseCount;
 	}
 }
