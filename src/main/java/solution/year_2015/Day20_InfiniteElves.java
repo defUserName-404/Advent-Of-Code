@@ -2,10 +2,11 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public class Day20_InfiniteElves extends Solution {
+public class Day20_InfiniteElves extends Solution<Integer> {
 	private static final int INPUT = Integer.parseInt(input.get(0));
 
-	public static int part1() {
+	@Override
+	public Integer part1() {
 		int houseNo = 1;
 
 		while (true) {
@@ -28,5 +29,10 @@ public class Day20_InfiniteElves extends Solution {
 		displayOutput(String.valueOf(houseNo));
 
 		return houseNo;
+	}
+
+	@Override
+	public Integer part2() {
+		return null;
 	}
 }

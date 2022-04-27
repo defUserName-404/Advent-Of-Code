@@ -2,7 +2,7 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public class Day5_InternElves extends Solution {
+public class Day5_InternElves extends Solution<Integer> {
 	private static boolean isVowel(char currentCharacter) {
 		return (currentCharacter == 'a'
 				|| currentCharacter == 'e'
@@ -47,7 +47,8 @@ public class Day5_InternElves extends Solution {
 		);
 	}
 
-	public static int part1() {
+	@Override
+	public Integer part1() {
 		int count = 0;
 
 		for (final String current : input) {
@@ -58,5 +59,10 @@ public class Day5_InternElves extends Solution {
 		displayOutput(String.valueOf(count));
 
 		return count;
+	}
+
+	@Override
+	public Integer part2() {
+		return null;
 	}
 }

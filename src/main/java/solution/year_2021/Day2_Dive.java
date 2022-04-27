@@ -2,8 +2,9 @@ package solution.year_2021;
 
 import solution.Solution;
 
-public class Day2_Dive extends Solution {
-	public static int part1() {
+public class Day2_Dive extends Solution<Integer> {
+	@Override
+	public Integer part1() {
 		int x = 0, y = 0;
 
 		for (final String currentCommand : input) {
@@ -22,5 +23,10 @@ public class Day2_Dive extends Solution {
 		displayOutput(String.valueOf(multiplicationResult));
 
 		return multiplicationResult;
+	}
+
+	@Override
+	public Integer part2() {
+		return null;
 	}
 }

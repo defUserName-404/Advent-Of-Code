@@ -4,8 +4,9 @@ import solution.Solution;
 
 import java.util.HashMap;
 
-public class Day3_BinaryDiagnostic extends Solution {
-	public static int part1() {
+public class Day3_BinaryDiagnostic extends Solution<Integer> {
+	@Override
+	public Integer part1() {
 		HashMap<Integer, Integer> occurrenceOfZeroInColumn = new HashMap<>();
 		StringBuilder gamma = new StringBuilder(), epsilon = new StringBuilder();
 		int n = input.get(0).length();
@@ -40,5 +41,10 @@ public class Day3_BinaryDiagnostic extends Solution {
 		displayOutput(String.valueOf(ans));
 
 		return ans;
+	}
+
+	@Override
+	public Integer part2() {
+		return null;
 	}
 }

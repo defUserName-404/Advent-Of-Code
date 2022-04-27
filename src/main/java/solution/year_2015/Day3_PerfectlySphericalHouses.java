@@ -5,7 +5,8 @@ import util.Pair;
 
 import java.util.HashMap;
 
-public final class Day3_PerfectlySphericalHouses extends Solution {
+public final class Day3_PerfectlySphericalHouses extends Solution<Integer> {
+
 	private static final HashMap<Pair<Integer, Integer>, Integer> houses = new HashMap<>();
 
 	private static void mapCoordinates(int x, int y) {
@@ -24,7 +25,8 @@ public final class Day3_PerfectlySphericalHouses extends Solution {
 		return new int[]{x, y};
 	}
 
-	public static int part1() {
+	@Override
+	public Integer part1() {
 		int x = 0, y = 0;
 		mapCoordinates(x, y);
 
@@ -43,7 +45,8 @@ public final class Day3_PerfectlySphericalHouses extends Solution {
 		return ans;
 	}
 
-	public static int part2() {
+	@Override
+	public Integer part2() {
 		int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 		mapCoordinates(x1, y1);
 

@@ -2,7 +2,8 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public final class Day1_NotQuiteLisp extends Solution {
+public final class Day1_NotQuiteLisp extends Solution<Integer> {
+
 	private static int count = 0;
 
 	private static void followInstructions(char currentChar) {
@@ -12,7 +13,8 @@ public final class Day1_NotQuiteLisp extends Solution {
 			count--;
 	}
 
-	public static int part1() {
+	@Override
+	public Integer part1() {
 		count = 0;
 
 		for (final String current : input)
@@ -24,7 +26,8 @@ public final class Day1_NotQuiteLisp extends Solution {
 		return count;
 	}
 
-	public static int part2() {
+	@Override
+	public Integer part2() {
 		count = 0;
 		int ans = 0;
 
