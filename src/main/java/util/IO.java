@@ -40,4 +40,14 @@ public class IO {
 			e.printStackTrace();
 		}
 	}
+
+	public void writeToFile(File file, String string) {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+			writer.write(string);
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
