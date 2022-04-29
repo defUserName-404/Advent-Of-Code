@@ -4,18 +4,11 @@ import solution.Solution;
 
 public class Day12JSAbacusFramework extends Solution<Integer> {
 
-	private boolean isDigit(char ch) {
-		return (ch >= '0' && ch <= '9');
-	}
-
 	@Override
 	public Integer part1() {
 		String string = input.get(0);
-		int count = 0;
-
-		StringBuilder temp = new StringBuilder();
-
 		int sum = 0;
+		StringBuilder temp = new StringBuilder();
 
 		for (int i = 0; i < string.length(); i++) {
 			char ch = string.charAt(i);
