@@ -5,6 +5,7 @@ import util.IO;
 import java.util.ArrayList;
 
 public abstract class Solution<T> {
+
 	protected static final ArrayList<String> input = IO.getInstance().readInputFile();
 
 	protected static void displayOutput(String output) {
