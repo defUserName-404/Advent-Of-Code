@@ -17,4 +17,5 @@ class Day2_DiveTest {
 		int ans = solution.part1();
 		Assertions.assertEquals(ans, 150);
 	}
+
 }

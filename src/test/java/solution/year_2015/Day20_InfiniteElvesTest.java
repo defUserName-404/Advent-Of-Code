@@ -77,4 +77,5 @@ class Day20_InfiniteElvesTest {
 		int ans = solution.part1();
 		Assertions.assertEquals(9, ans);
 	}
+
 }

@@ -17,4 +17,5 @@ class Day1_NotQuiteLispTest {
 		int ans = solution.part1();
 		Assertions.assertEquals(ans, 0);
 	}
+
 }

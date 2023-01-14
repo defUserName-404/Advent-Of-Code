@@ -14,7 +14,7 @@ class Day3_BinaryDiagnosticTest {
 	@Test
 	void part1() {
 		int ans = day3Solution.part1();
-
 		Assertions.assertEquals(ans, 198);
 	}
+
 }

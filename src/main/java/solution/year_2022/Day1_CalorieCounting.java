@@ -43,10 +43,12 @@ public class Day1_CalorieCounting extends Solution<Long> {
 				third = second;
 				second = first;
 				first = calorie;
-			} else if (calorie >= second) {
+			}
+			else if (calorie >= second) {
 				third = second;
 				second = calorie;
-			} else if (calorie >= third) {
+			}
+			else if (calorie >= third) {
 				third = calorie;
 			}
 		}

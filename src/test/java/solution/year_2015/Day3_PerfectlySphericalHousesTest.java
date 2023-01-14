@@ -17,4 +17,5 @@ class Day3_PerfectlySphericalHousesTest {
 		int ans = solution.part1();
 		Assertions.assertEquals(ans, 4);
 	}
+
 }

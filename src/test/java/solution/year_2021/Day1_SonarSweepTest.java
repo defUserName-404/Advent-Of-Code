@@ -17,4 +17,5 @@ class Day1_SonarSweepTest {
 		int ans = solution.part1();
 		Assertions.assertEquals(ans, 7);
 	}
+
 }
