@@ -6,7 +6,7 @@ public class Runner {
 
 	public static void main(String[] args) {
 		Solution<Long> solution = new Day1_CalorieCounting();
-		long ans = solution.part1();
+		long ans = solution.part2();
 		System.out.println(ans);
 	}
 
