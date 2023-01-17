@@ -44,6 +44,16 @@ public class Day3RucksackReorganizationTest {
 
 	@Test
 	void part2() {
+		IO
+				.getInstance()
+				.concatToFile(INPUT_FILE,
+							  new ArrayList<>(List.of("vJrwpWtwJgWrhcsFMMfFFhFp",
+													  "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
+													  "PmmdzqPrVvPwwTWBwg",
+													  "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
+													  "ttgJtRGJQctTZtZT",
+													  "CrZsJsPPZsGzwwsLwLmpwMDw")));
+		assertEquals(70, solution.part2());
 	}
 
 }

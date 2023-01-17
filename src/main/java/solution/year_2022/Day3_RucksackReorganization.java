@@ -2,14 +2,14 @@ package solution.year_2022;
 
 import solution.Solution;
 
-import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Day3_RucksackReorganization extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {
-		List<String> rucksacks = getInput();
-		return rucksacks
+		return getInput()
 				.stream()
 				.map(rucksack -> {
 					int halfLength = rucksack.length() / 2;
@@ -23,15 +23,42 @@ public class Day3_RucksackReorganization extends Solution<Integer> {
 									.mapToObj(c2 -> (char) c2)
 									.anyMatch(c2 -> c1 == c2))
 							.findFirst()
-							.orElse('*');
+							.orElse('\0');
 				})
-				.mapToInt(common -> (common >= 'a' && common <= 'z') ? common - 'a' + 1 : common - 'A' + 27)
+				.mapToInt(this::calculatePriority)
 				.sum();
+	}
+
+	private int calculatePriority(char character) {
+		return character >= 'a' && character <= 'z' ? character - 'a' + 1 : character - 'A' + 27;
 	}
 
 	@Override
 	public Integer part2() {
-		return null;
+		return IntStream
+				.range(0, getInput().size())
+				.boxed()
+				.collect(Collectors.groupingBy(index -> index / 3))
+				.values()
+				.stream()
+				.map(indices -> indices
+						.stream()
+						.map(getInput()::get)
+						.collect(Collectors.joining("\n")))
+				.mapToInt(group -> {
+					char commonCharacter = group
+							.chars()
+							.mapToObj(c -> (char) c)
+							.distinct()
+							.filter(c -> group
+									.lines()
+									.allMatch(line -> line.contains(String.valueOf(c))))
+							.findFirst()
+							.orElse('\0');
+					return calculatePriority(commonCharacter);
+				})
+				.sum();
+
 	}
 
 }
