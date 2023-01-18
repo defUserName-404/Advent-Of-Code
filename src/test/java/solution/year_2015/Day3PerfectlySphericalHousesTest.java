@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import solution.Solution;
 
-class Day3_PerfectlySphericalHousesTest {
+public class Day3PerfectlySphericalHousesTest {
 
 	private final Solution<Integer> solution;
 
-	Day3_PerfectlySphericalHousesTest() {
+	Day3PerfectlySphericalHousesTest() {
 		this.solution = new Day3_PerfectlySphericalHouses();
 	}
 

@@ -3,11 +3,11 @@ package solution.year_2021;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class Day3_BinaryDiagnosticTest {
+public class Day3BinaryDiagnosticTest {
 
 	private final Day3_BinaryDiagnostic day3Solution;
 
-	Day3_BinaryDiagnosticTest() {
+	Day3BinaryDiagnosticTest() {
 		this.day3Solution = new Day3_BinaryDiagnostic();
 	}
 

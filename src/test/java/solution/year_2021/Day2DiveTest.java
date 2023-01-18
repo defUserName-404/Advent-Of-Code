@@ -1,21 +1,21 @@
-package solution.year_2015;
+package solution.year_2021;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import solution.Solution;
 
-class Day1_NotQuiteLispTest {
+public class Day2DiveTest {
 
 	private final Solution<Integer> solution;
 
-	Day1_NotQuiteLispTest() {
-		this.solution = new Day1_NotQuiteLisp();
+	Day2DiveTest() {
+		this.solution = new Day2_Dive();
 	}
 
 	@Test
 	public void part1() {
 		int ans = solution.part1();
-		Assertions.assertEquals(ans, 0);
+		Assertions.assertEquals(ans, 150);
 	}
 
 }

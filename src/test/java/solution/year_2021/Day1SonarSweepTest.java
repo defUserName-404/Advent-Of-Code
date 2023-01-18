@@ -4,18 +4,18 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import solution.Solution;
 
-class Day2_DiveTest {
+public class Day1SonarSweepTest {
 
 	private final Solution<Integer> solution;
 
-	Day2_DiveTest() {
-		this.solution = new Day2_Dive();
+	Day1SonarSweepTest() {
+		this.solution = new Day1_SonarSweep();
 	}
 
 	@Test
 	public void part1() {
 		int ans = solution.part1();
-		Assertions.assertEquals(ans, 150);
+		Assertions.assertEquals(ans, 7);
 	}
 
 }
