@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class Day3BinaryDiagnosticTest {
 
-	private final Day3_BinaryDiagnostic day3Solution;
+	private final Day3BinaryDiagnostic day3Solution;
 
 	Day3BinaryDiagnosticTest() {
-		this.day3Solution = new Day3_BinaryDiagnostic();
+		this.day3Solution = new Day3BinaryDiagnostic();
 	}
 
 	@Test

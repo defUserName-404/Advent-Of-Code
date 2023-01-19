@@ -12,7 +12,7 @@ public class Day20InfiniteElvesTest {
 	private final Solution<Integer> solution;
 
 	Day20InfiniteElvesTest() {
-		this.solution = new Day20_InfiniteElves();
+		this.solution = new Day20InfiniteElves();
 	}
 
 	@Test

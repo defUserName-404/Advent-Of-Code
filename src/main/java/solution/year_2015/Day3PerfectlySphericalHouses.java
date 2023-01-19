@@ -5,7 +5,7 @@ import util.Pair;
 
 import java.util.HashMap;
 
-public final class Day3_PerfectlySphericalHouses extends Solution<Integer> {
+public final class Day3PerfectlySphericalHouses extends Solution<Integer> {
 
 	private static final HashMap<Pair<Integer,Integer>,Integer> houses = new HashMap<>();
 

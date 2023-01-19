@@ -2,7 +2,7 @@ package solution.year_2021;
 
 import solution.Solution;
 
-public class Day1_SonarSweep extends Solution<Integer> {
+public final class Day1SonarSweep extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {

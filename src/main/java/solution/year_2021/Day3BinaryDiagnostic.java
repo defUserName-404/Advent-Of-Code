@@ -4,13 +4,15 @@ import solution.Solution;
 
 import java.util.HashMap;
 
-public class Day3_BinaryDiagnostic extends Solution<Integer> {
+public final class Day3BinaryDiagnostic extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {
 		HashMap<Integer,Integer> occurrenceOfZeroInColumn = new HashMap<>();
 		StringBuilder gamma = new StringBuilder(), epsilon = new StringBuilder();
-		int n = getInput().get(0).length();
+		int n = getInput()
+				.get(0)
+				.length();
 		int total = getInput().size();
 		for (final String current : getInput()) {
 			for (int idx = 0; idx < n; idx++) {

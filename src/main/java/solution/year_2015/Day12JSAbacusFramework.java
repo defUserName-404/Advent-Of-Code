@@ -2,7 +2,7 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public class Day12JSAbacusFramework extends Solution<Integer> {
+public final class Day12JSAbacusFramework extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {

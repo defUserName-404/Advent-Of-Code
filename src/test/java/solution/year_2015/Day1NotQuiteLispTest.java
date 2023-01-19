@@ -9,7 +9,7 @@ public class Day1NotQuiteLispTest {
 	private final Solution<Integer> solution;
 
 	Day1NotQuiteLispTest() {
-		this.solution = new Day1_NotQuiteLisp();
+		this.solution = new Day1NotQuiteLisp();
 	}
 
 	@Test

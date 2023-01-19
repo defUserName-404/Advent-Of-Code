@@ -15,7 +15,7 @@ public class Day1CalorieCountingTest {
 	private final Solution<Long> solution;
 
 	Day1CalorieCountingTest() {
-		this.solution = new Day1_CalorieCounting();
+		this.solution = new Day1CalorieCounting();
 	}
 
 	@Test

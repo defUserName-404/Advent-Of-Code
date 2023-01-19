@@ -2,7 +2,7 @@ package solution.year_2021;
 
 import solution.Solution;
 
-public class Day2_Dive extends Solution<Integer> {
+public final class Day2Dive extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {

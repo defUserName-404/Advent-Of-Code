@@ -9,7 +9,7 @@ public class Day2DiveTest {
 	private final Solution<Integer> solution;
 
 	Day2DiveTest() {
-		this.solution = new Day2_Dive();
+		this.solution = new Day2Dive();
 	}
 
 	@Test

@@ -2,7 +2,7 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public class Day5_InternElves extends Solution<Integer> {
+public final class Day5InternElves extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {

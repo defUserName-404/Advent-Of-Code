@@ -9,7 +9,7 @@ public class Day1SonarSweepTest {
 	private final Solution<Integer> solution;
 
 	Day1SonarSweepTest() {
-		this.solution = new Day1_SonarSweep();
+		this.solution = new Day1SonarSweep();
 	}
 
 	@Test

@@ -2,7 +2,7 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public class Day20_InfiniteElves extends Solution<Integer> {
+public final class Day20InfiniteElves extends Solution<Integer> {
 
 	private static final int INPUT = Integer.parseInt(getInput().get(0));
 

@@ -2,7 +2,7 @@ package solution.year_2015;
 
 import solution.Solution;
 
-public final class Day1_NotQuiteLisp extends Solution<Integer> {
+public final class Day1NotQuiteLisp extends Solution<Integer> {
 
 	private static int count = 0;
 

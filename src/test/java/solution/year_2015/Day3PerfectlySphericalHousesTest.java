@@ -9,7 +9,7 @@ public class Day3PerfectlySphericalHousesTest {
 	private final Solution<Integer> solution;
 
 	Day3PerfectlySphericalHousesTest() {
-		this.solution = new Day3_PerfectlySphericalHouses();
+		this.solution = new Day3PerfectlySphericalHouses();
 	}
 
 	@Test

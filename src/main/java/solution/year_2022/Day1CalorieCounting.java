@@ -5,7 +5,7 @@ import solution.Solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day1_CalorieCounting extends Solution<Long> {
+public final class Day1CalorieCounting extends Solution<Long> {
 
 	@Override
 	public Long part1() {

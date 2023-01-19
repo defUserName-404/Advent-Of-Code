@@ -18,7 +18,7 @@ public class Day3RucksackReorganizationTest {
 
 	@BeforeAll
 	static void setup() {
-		solution = new Day3_RucksackReorganization();
+		solution = new Day3RucksackReorganization();
 	}
 
 	@BeforeEach
