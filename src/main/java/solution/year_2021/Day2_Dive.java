@@ -7,7 +7,7 @@ public class Day2_Dive extends Solution<Integer> {
 	public Integer part1() {
 		int x = 0, y = 0;
 
-		for (final String currentCommand : input) {
+		for (final String currentCommand : getInput()) {
 			String[] parts = currentCommand.split(" ");
 			String command = parts[0];
 			int value = Integer.parseInt(parts[1]);

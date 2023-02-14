@@ -9,10 +9,10 @@ public class Day3_BinaryDiagnostic extends Solution<Integer> {
 	public Integer part1() {
 		HashMap<Integer, Integer> occurrenceOfZeroInColumn = new HashMap<>();
 		StringBuilder gamma = new StringBuilder(), epsilon = new StringBuilder();
-		int n = input.get(0).length();
-		int total = input.size();
+		int n = getInput().get(0).length();
+		int total = getInput().size();
 
-		for (final String current : input) {
+		for (final String current : getInput()) {
 			for (int idx = 0; idx < n; idx++) {
 				if (current.charAt(idx) == '0') {
 					if (occurrenceOfZeroInColumn.get(idx) == null)

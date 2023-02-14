@@ -3,7 +3,7 @@ package solution.year_2015;
 import solution.Solution;
 
 public class Day20_InfiniteElves extends Solution<Integer> {
-	private static final int INPUT = Integer.parseInt(input.get(0));
+	private static final int INPUT = Integer.parseInt(getInput().get(0));
 
 	@Override
 	public Integer part1() {

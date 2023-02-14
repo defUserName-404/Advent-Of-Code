@@ -51,7 +51,7 @@ public class Day5_InternElves extends Solution<Integer> {
 	public Integer part1() {
 		int count = 0;
 
-		for (final String current : input) {
+		for (final String current : getInput()) {
 			if (isNice(current))
 				count++;
 		}

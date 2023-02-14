@@ -2,18 +2,19 @@ package solution.year_2021;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import solution.Solution;
 
 class Day1_SonarSweepTest {
 
-	private final Day1_SonarSweep day1Solution;
+	private final Solution<Integer> solution;
 
 	Day1_SonarSweepTest() {
-		this.day1Solution = new Day1_SonarSweep();
+		this.solution = new Day1_SonarSweep();
 	}
 
 	@Test
 	public void part1() {
-		int ans = day1Solution.part1();
+		int ans = solution.part1();
 		Assertions.assertEquals(ans, 7);
 	}
 }

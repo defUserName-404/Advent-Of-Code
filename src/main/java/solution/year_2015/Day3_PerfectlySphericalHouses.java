@@ -30,7 +30,7 @@ public final class Day3_PerfectlySphericalHouses extends Solution<Integer> {
 		int x = 0, y = 0;
 		mapCoordinates(x, y);
 
-		for (final String current : input) {
+		for (final String current : getInput()) {
 			for (final char currentChar : current.toCharArray()) {
 				int[] coordinatesAfterMoveMade = coordinatesAfterMove(x, y, currentChar);
 				x = coordinatesAfterMoveMade[0];
@@ -50,7 +50,7 @@ public final class Day3_PerfectlySphericalHouses extends Solution<Integer> {
 		int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 		mapCoordinates(x1, y1);
 
-		for (final String current : input) {
+		for (final String current : getInput()) {
 			for (int i = 0; i < current.length(); i++) {
 				char currentChar = current.charAt(i);
 				if (i % 2 == 0) {

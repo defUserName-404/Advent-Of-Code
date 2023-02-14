@@ -6,7 +6,7 @@ public class Day12JSAbacusFramework extends Solution<Integer> {
 
 	@Override
 	public Integer part1() {
-		String string = input.get(0);
+		String string = getInput().get(0);
 		int sum = 0;
 		StringBuilder temp = new StringBuilder();
 

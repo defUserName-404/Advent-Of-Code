@@ -7,17 +7,14 @@ public final class Day1_NotQuiteLisp extends Solution<Integer> {
 	private static int count = 0;
 
 	private static void followInstructions(char currentChar) {
-		if (currentChar == '(')
-			count++;
-		else if (currentChar == ')')
-			count--;
+		count += currentChar == '(' ? 1 : -1;
 	}
 
 	@Override
 	public Integer part1() {
 		count = 0;
 
-		for (final String current : input)
+		for (final String current : getInput())
 			for (final char currentChar : current.toCharArray())
 				followInstructions(currentChar);
 
@@ -31,7 +28,7 @@ public final class Day1_NotQuiteLisp extends Solution<Integer> {
 		count = 0;
 		int ans = 0;
 
-		for (final String current : input) {
+		for (final String current : getInput()) {
 			for (int i = 0; i < current.length(); i++) {
 				followInstructions(current.charAt(i));
 
