@@ -2,17 +2,24 @@ package solution;
 
 import util.IO;
 
-import java.util.ArrayList;
+import java.io.File;
+import java.util.List;
 
 public abstract class Solution<T> {
 
-	protected static final ArrayList<String> input = IO.getInstance().readInputFile();
+	public static final File INPUT_FILE = new File("src/main/resources/io/input.txt");
+	public static final File OUTPUT_FILE = new File("src/main/resources/io/output.txt");
 
-	protected static void displayOutput(String output) {
-		IO.getInstance().writeToOutputFile(String.valueOf(output));
+	protected static List<String> getInput() {
+		return IO.getInstance().readFile(INPUT_FILE);
 	}
 
-	protected abstract T part1();
+	protected static void displayOutput(String output) {
+		IO.getInstance().writeToFile(OUTPUT_FILE, output);
+	}
 
-	protected abstract T part2();
+	public abstract T part1();
+
+	public abstract T part2();
+
 }

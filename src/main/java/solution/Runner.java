@@ -1,6 +1,5 @@
-package util;
+package solution;
 
-import solution.Solution;
 import solution.year_2022.Day1_CalorieCounting;
 
 public class Runner {
@@ -10,5 +9,5 @@ public class Runner {
 		long ans = solution.part1();
 		System.out.println(ans);
 	}
-	
+
 }

@@ -2,18 +2,19 @@ package solution.year_2015;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import solution.Solution;
 
 class Day3_PerfectlySphericalHousesTest {
 
-	private final Day3_PerfectlySphericalHouses day3Solution;
+	private final Solution<Integer> solution;
 
 	Day3_PerfectlySphericalHousesTest() {
-		this.day3Solution = new Day3_PerfectlySphericalHouses();
+		this.solution = new Day3_PerfectlySphericalHouses();
 	}
 
 	@Test
 	void part1() {
-		int ans = day3Solution.part1();
+		int ans = solution.part1();
 		Assertions.assertEquals(ans, 4);
 	}
 }
